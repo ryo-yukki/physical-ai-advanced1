@@ -1,0 +1,9 @@
+# YOLO
+*.pt
+
+
+# Temporary notes
+*.txt
+
+# Webots thumbnail
+*.jpg

@@ -1,0 +1,58 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/universal_robots/protos/UR3e.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/animals/protos/Cat.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/devices/robotiq/protos/Robotiq2f85Gripper.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/fruits/protos/Apple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/living_room_furniture/protos/Carpet.proto"
+
+WorldInfo {
+  info [
+    ""
+    ""
+    ""
+  ]
+}
+Viewpoint {
+  orientation -0.2732887893675864 0.02959205296690205 0.9614767537528939 2.9104248061690927
+  position 2.1335593319565165 0.14339266727812044 0.9646089594470414
+}
+TexturedBackground {
+}
+Carpet {
+  translation 0 -0.05 0
+}
+Apple {
+  translation 0.724056 0.0520494 0.06843270628787082
+  rotation 1 0 0 2.733162480443071e-16
+  mass 1
+}
+Cat {
+  translation -0.2 1.5 0
+  rotation 1 0 0 0
+}
+TexturedBackgroundLight {
+}
+UR3e {
+  translation 0.02 0.08 0.02
+  controller "ur3_controller"
+  toolSlot [
+    Robotiq2f85Gripper {
+      rotation 0 -1 0 0.523596
+    }
+    RangeFinder {
+      translation -0.0433015 0 0.075
+      rotation 0 1 0 -2.09439
+      width 640
+      height 480
+    }
+    Camera {
+      translation -0.0433015 0 0.075
+      rotation 0 1 0 -2.0943903061004256
+      width 640
+      height 480
+    }
+  ]
+}
